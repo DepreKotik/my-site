@@ -6,15 +6,18 @@ import WorkPage from '@/pages/WorkPage'
 const routes = [
   {
     path: '/',
-    component: RootPage
+    component: RootPage,
+    meta: { transition: 'slide-left' }
   },
   {
     path: '/study',
-    component: StudyPage
+    component: StudyPage,
+    meta: { transition: 'slide-left' }
   },
   {
     path: '/work',
-    component: WorkPage
+    component: WorkPage,
+    meta: { transition: 'slide-left' }
   }
 ]
 

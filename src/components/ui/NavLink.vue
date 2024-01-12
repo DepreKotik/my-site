@@ -60,6 +60,12 @@ img {
   z-index: 10;
   opacity: 0;
   transition: all 0.4s ease;
+
+  @media (max-width: 769px) {
+    padding: 15px;
+    opacity: 1;
+    background-color: rgba(61, 61, 117, 0.8);
+  }
 }
 
 .title {
@@ -78,5 +84,9 @@ img {
 
 .feature__item + .feature__item{
   margin-top: 15px;
+
+  @media (max-width: 769px) {
+    margin-top: 10px;
+  }
 }
 </style>

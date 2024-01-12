@@ -26,6 +26,13 @@ button {
   font-size: 15px;
   font-weight: 700;
 
+  @media (max-width: 769px) {
+    background-color: rgb(61, 61, 117);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+
   &:hover {
     background-color: #619753;
     color: #fff;
@@ -38,6 +45,12 @@ button {
   font-size: 20px;
   letter-spacing: 0.8px;
   padding: 15px 20px;
+
+  @media (max-width: 769px) {
+    font-size: 18px;
+    width: fit-content;
+    margin: 0 auto;
+  }
 
   &:hover {
     background-color: rgb(61, 61, 117);

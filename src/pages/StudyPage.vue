@@ -75,9 +75,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section {
   padding: 50px 40px;
+
+  @media (max-width: 769px) {
+    padding: 30px 10px;
+  }
 }
 
 h1 {
@@ -85,12 +89,22 @@ h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
+
+  @media (max-width: 769px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 

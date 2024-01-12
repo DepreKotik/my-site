@@ -36,7 +36,7 @@ footer {
 
 ul {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 40px;
 }
 
