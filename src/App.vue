@@ -1,6 +1,6 @@
 <template>
   <header-item></header-item>
-  <transition appear><router-view></router-view></transition>
+  <router-view></router-view>
   <footer-item></footer-item>
 </template>
 

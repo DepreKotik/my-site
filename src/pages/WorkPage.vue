@@ -16,7 +16,7 @@ export default {
     links: [
     {
         id: 0,
-        href: "https://deprekotik.github.io/Keybox/",
+        href: "https://solicat1.github.io/Keybox/",
         title: "Кейбокс - аренда боксов для хранения",
         secondTitle: "Работа для студии Лепёхина",
         features: ['html, css, js', 'адаптивная верстка'],

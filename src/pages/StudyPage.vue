@@ -16,7 +16,7 @@ export default {
     links: [
     {
         id: 0,
-        href: "https://deprekotik.github.io/660117-sedona-36/",
+        href: "https://solicat1.github.io/660117-sedona-36/",
         title: "Седона - туристический сайт",
         secondTitle: "Первый модуль",
         features: ['html, css'],
@@ -24,7 +24,7 @@ export default {
       },
       {
         id: 1,
-        href: "https://deprekotik.github.io/660117-gllacy-36/",
+        href: "https://solicat1.github.io/660117-gllacy-36/",
         title: "Глейси - интернет магазин мороженного",
         secondTitle: "Первый модуль",
         features: ['html, css'],
@@ -32,7 +32,7 @@ export default {
       },
       {
         id: 2,
-        href: "https://deprekotik.github.io/660117-mishka-28/",
+        href: "https://solicat1.github.io/660117-mishka-28/",
         title: "Мишка - интернет магазин милых вязанных вещей",
         secondTitle: "Второй модуль",
         features: ['html, css', 'адаптивная верстка'],
@@ -40,7 +40,7 @@ export default {
       },
       {
         id: 3,
-        href: "https://deprekotik.github.io/660117-cat-energy-28/",
+        href: "https://solicat1.github.io/660117-cat-energy-28/",
         title: "CatEnergy - интернет магазин корма для кошек",
         secondTitle: "Второй модуль",
         features: ['html, css', 'адаптивная верстка'],
@@ -48,7 +48,7 @@ export default {
       },
       {
         id: 4,
-        href: "https://deprekotik.github.io/660117-kekstagram-29/",
+        href: "https://solicat1.github.io/660117-kekstagram-29/",
         title: "Кекстаграм - аналог инстаграма",
         secondTitle: "Третий модуль",
         features: ['js'],
@@ -56,7 +56,7 @@ export default {
       },
       {
         id: 5,
-        href: "https://deprekotik.github.io/Drink2go/",
+        href: "https://solicat1.github.io/Drink2go/",
         title: "Drink2go - интернет магазин кофе",
         secondTitle: "Грейдирование",
         features: ['html, css, js', 'адаптивная верстка'],
@@ -64,7 +64,7 @@ export default {
       },
       {
         id: 5,
-        href: "https://deprekotik.github.io/Fitness/",
+        href: "https://solicat1.github.io/Fitness/",
         title: "Fitness - страничка фитнес клуба",
         secondTitle: "Акселератор",
         features: ['html, css, js', 'адаптивная верстка'],
