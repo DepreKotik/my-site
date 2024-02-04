@@ -22,7 +22,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+    mounted(){
+    const url = `https://api.telegram.org/bot6914842457:AAHyHwhsSMZy2d6zPQyN5ebTxJJduIPmKI4/sendMessage`
+    const obj = {
+        chat_id: 1196623341,
+        text: "Твой сайт кто то посетил"
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(obj)
+    })  
+  }
+}
 </script>
 
 <style scoped lang="scss">

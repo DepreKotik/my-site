@@ -1,5 +1,5 @@
 <template>
-  <a :href="link.href">
+  <a :href="link.href" class="animate__animated" :class="$props.link.animation">
     <div class="content">
       <h2 class="title">{{ link.secondTitle }}</h2>
       <span class="second__title">{{ link.title }}</span>
@@ -7,7 +7,7 @@
         <li class="feature__item" v-for="feature in link.features" :key="feature">{{ feature }}</li>
       </ul>
     </div>
-    <img :src="require(`@/assets/${link.src}`)"> 
+    <img :src="require(`@/assets/${link.src}`)" :class="{ small: $props.link.isSmall}"> 
   </a>
 </template>
 
@@ -37,6 +37,10 @@ img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+
+  &.small {
+    object-fit: contain;
+  }
 }
 
 .second__title {
