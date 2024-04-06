@@ -4,7 +4,7 @@
     <article>
       <img src="@/assets/my-photo.jpg" width="300" height="193" />
       <p>
-        Меня зовут Владимир Чеготов и я фронтенд разработчик. Прохожу обучение в
+        Меня зовут Владимир Чеготов и я фронтенд разработчик. Прошёл обучение в
         HtmlAcademy, работаю в студии Лепёхина. Этот сайт создан для того чтобы
         практиковать навыки написания кода на vue.js, а так-же для того чтобы вы
         могли поближе познакомится со мной и моими проектами.
@@ -17,6 +17,9 @@
       <link-item :isIntroLink="true" @click="$router.push('/work')"
         >Рабочие проекты</link-item
       >
+      <link-item :isIntroLink="true" @click="$router.push('/vue')"
+        >Vue проекты</link-item
+      >
     </div>
   </section>
 </template>
@@ -28,8 +31,7 @@ export default {
     const obj = {
         chat_id: 1196623341,
         text: "Твой сайт кто то посетил"
-    };
-
+    }
     fetch(url, {
         method: "POST",
         headers: {

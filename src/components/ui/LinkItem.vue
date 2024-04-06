@@ -25,6 +25,7 @@ button {
   color: inherit;
   font-size: 15px;
   font-weight: 700;
+  flex-grow: 0.7;
 
   @media (max-width: 769px) {
     background-color: rgb(61, 61, 117);
@@ -48,7 +49,7 @@ button {
 
   @media (max-width: 769px) {
     font-size: 18px;
-    width: fit-content;
+    min-width: 250px;
     margin: 0 auto;
   }
 

@@ -1,13 +1,22 @@
 <template>
-  <a :href="link.href" class="animate__animated" :class="$props.link.animation">
+  <a :href="link.href" class="animate__animated" @click="sendMessage">
     <div class="content">
       <h2 class="title">{{ link.secondTitle }}</h2>
       <span class="second__title">{{ link.title }}</span>
       <ul class="feature__list">
-        <li class="feature__item" v-for="feature in link.features" :key="feature">{{ feature }}</li>
+        <li
+          class="feature__item"
+          v-for="feature in link.features"
+          :key="feature"
+        >
+          {{ feature }}
+        </li>
       </ul>
     </div>
-    <img :src="require(`@/assets/${link.src}`)" :class="{ small: $props.link.isSmall}"> 
+    <img
+      :src="require(`@/assets/${link.src}`)"
+      :class="{ small: $props.link.isSmall }"
+    />
   </a>
 </template>
 
@@ -18,6 +27,20 @@ export default {
   props: {
     link: {
       type: Object
+    }
+  },
+  methods: {
+    sendMessage() {
+        const url = `https://api.telegram.org/bot6914842457:AAHyHwhsSMZy2d6zPQyN5ebTxJJduIPmKI4/sendMessage`
+        const obj = {
+        chat_id: 1196623341,
+        text: `Нажали на ссылку ${this.$props.link.secondTitle}`
+    }
+    fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json"},
+        body: JSON.stringify(obj)
+    })
     }
   }
 }
@@ -86,7 +109,7 @@ img {
   padding-left: 40px;
 }
 
-.feature__item + .feature__item{
+.feature__item + .feature__item {
   margin-top: 15px;
 
   @media (max-width: 769px) {

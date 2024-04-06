@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import RootPage from '@/pages/RootPage'
 import StudyPage from '@/pages/StudyPage'
 import WorkPage from '@/pages/WorkPage'
+import VuePage from '@/pages/VuePage'
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: '/work',
     component: WorkPage
+  },
+  {
+    path: '/vue',
+    component: VuePage
   }
 ]
 

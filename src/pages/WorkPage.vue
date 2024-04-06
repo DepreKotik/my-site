@@ -24,33 +24,29 @@ export default {
       },
       {
         id: 1,
-        href: "https://master--aesthetic-marigold-7a728f.netlify.app/",
-        title: "Приложение - мини-личный кабинет",
-        secondTitle: "Тестовое задание для Webtronics",
-        features: ['html, css, vue3', 'адаптивная верстка'],
+        href: "https://lepekhin.studio/ru",
+        title: "Добавление новых блоков на сайт студии",
+        secondTitle: "Работа для студии Лепёхина",
+        features: ['html, css, js', 'адаптивная верстка'],
         isSmall: true,
-        src: 'webtronics.svg'
-      },
-      {
-        id: 2,
-        href: "https://venerable-meerkat-58131e.netlify.app/",
-        title: "Приложение - список серверов",
-        secondTitle: "Тестовое задание для Puzzle",
-        features: ['html, css, nuxt3', 'адаптивная верстка'],
-        isSmall: true,
-        src: 'puzzle.png'
-      },
-      {
-        id: 2,
-        href: "https://genuine-babka-4148a4.netlify.app/",
-        title: "Страничка с ценами",
-        secondTitle: "Тестовое задание для ReveredPro",
-        features: ['html, css', 'адаптивная верстка'],
-        isSmall: true,
-        src: 'reveredpro.png'
+        src: 'lep.png'
       }
     ],
   }),
+  mounted(){
+    const url = `https://api.telegram.org/bot6914842457:AAHyHwhsSMZy2d6zPQyN5ebTxJJduIPmKI4/sendMessage`
+    const obj = {
+        chat_id: 1196623341,
+        text: "Зашли в рабочие"
+    }
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(obj)
+    })  
+  }
 };
 </script>
 

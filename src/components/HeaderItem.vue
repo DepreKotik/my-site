@@ -7,6 +7,9 @@
         <link-item @click="$router.push('/')">Обо мне</link-item>
       </li>
       <li>
+        <link-item @click="$router.push('/vue')">Vue проекты</link-item>
+      </li>
+      <li>
         <link-item @click="$router.push('/work')">Рабочие проекты</link-item>
       </li>
       <li>
